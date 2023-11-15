@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10th que</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p><center>can't we work this relationship out i don't want to lose you?????</center></p>
+    <form>
+        <label>
+            <input type="radio" name="answer" value="Yeah We Will Work This Out"> Yeah We Will Work This Out
+        </label>
+        <label>
+            <input type="radio" name="answer" value="sure"> sure
+        </label>
+		<label>
+            <input type="radio" name="answer" value="I am love you with my whole heart"> I am love you with my whole heart
+        </label>
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <script>
+        function submitForm() {
+            var answer = document.querySelector('input[name="answer"]:checked');
+
+            if (answer) {
+                alert("You selected : " + answer.value);	
+            } else {
+                alert("Please select an option.");
+            }
+        }
+    </script>
+	<p><center><a href="file:///C:/Users/Admin/Desktop/html/11thpage(1).html" target="_blank">next question</a></center></p>
+	
+	
+</body>
+</html>
